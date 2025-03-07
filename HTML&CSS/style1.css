@@ -1,0 +1,26 @@
+h1
+    {
+        color:rgb(1, 4, 3);
+        background-color: pink;
+        text-align: center;
+        font-weight: normal;
+        text-decoration: underline;
+        text-decoration-color: crimson  ;
+        text-decoration-style: wavy;
+        letter-spacing: 3px;
+        font-family: fantasy ;
+    }   
+    p{
+        color : rgb(0,0,0);
+        background-color: rgb(219, 224, 202);
+        text-decoration:  overline;
+        text-decoration-color: blue ;
+        text-decoration-style: dashed;
+        line-height: 1.5;
+        font-size: 18px;
+        font-family:impact;
+        text-transform: uppercase;
+    }
+    a{
+        text-decoration: none;
+    }

@@ -1,0 +1,35 @@
+.container{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: inline-grid ;
+    /* grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px 100px; */
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns:1fr 1fr 1fr ;   /*shorthand for grid templates*/
+    /* row-gap: 10px;
+    column-gap: 20px; */
+    grid-gap: 10px 20px;
+    justify-items: start; /*aligns the items to the start of the grid cell horizontally*/
+    align-items: center; /*aligns the items to the center of the grid cell vertically*/
+}
+
+.item{
+    height: 50px;
+    width: 100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+.one{
+    justify-self: start; /*aligns the item to the start of the grid cell horizontally*/
+    align-self: start; /*aligns the items to the start of the grid cell vertically*/
+}
+/* .one{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* grid-column: 1 / span 2;   shorthand
+}
+.two{
+    grid-row: 1/3;
+} */ 

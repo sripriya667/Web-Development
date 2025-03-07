@@ -1,0 +1,115 @@
+/* universal selector */
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* element selector */
+h1,h3{
+    color: #b92b27;
+    
+}
+/* id selector */
+#login{ 
+    background-color: white;
+    color: white;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+/* class selector */
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+/* descendant selector -- selects all paragraphs inside divs -- */
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+ li a{
+    color: hotpink;
+}
+/* sibling combinator */
+.upvote+button{
+    background-color:cornflowerblue;
+}
+/* child combinator */
+div > input{
+    background-color: darksalmon;
+    color: white;
+}
+/* attribute selector */
+input[type="text"]{
+    color: black;
+}
+input[type="password"]{
+    color: black;
+}
+input[type]{
+   background-color:  white;
+}
+#myid p{ /* id selector */
+    color: green;
+}
+
+div[id="myid"] p{ /* attribute selector */
+    color: green;
+}
+
+/* pseudo class
+:hover
+:active
+:checked
+:nth-of-type
+ */
+button:hover{
+    background-color: black;
+    color:white;
+}
+h3:hover{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+p:active{
+    font-weight: bold;
+    color: green;
+}
+input[type="radio"]:checked +label {
+    color: red;
+    font-weight: bold;
+}
+div:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+/* Pseudo Elements */
+h1::first-letter{
+    color: blue;
+}
+
+p::first-line{
+    color: #b92b27;
+}
+p::selection{
+    background-color: rgb(205, 187, 50);
+}
+
+/* cascading style sheets always gives priority to the last updated element */
+
+h3{
+    background-color: yellow;
+}
+h3{
+    background-color: green;
+}
+
+/* Selector Specificity 
+--Id > Class,Attribute,Pseudo class > Element,Pseudo element-- 
+--if specificity is equal then compare cascadijng--
+--also inline style > id --
+*/
+
+h3{
+  background-color:  yellow !important;
+}
+
