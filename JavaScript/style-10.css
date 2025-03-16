@@ -1,4 +1,4 @@
-body{
+/* body{
     text-align: center;
 }
 div{
@@ -6,4 +6,17 @@ div{
     width: 500px;
     border: 1px solid black;
     margin: auto;
+} */
+
+div{
+    background-color: pink;
+    height: 200px;
+    width: 400px;
+}
+
+ul{
+    background-color: blue;
+}
+li{
+    background-color: greenyellow;
 }
